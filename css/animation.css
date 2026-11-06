@@ -1,0 +1,87 @@
+/* Gentle entrance, floating and scroll-reveal effects. */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-copy.visible {
+  transition-delay: 0.08s;
+}
+
+.hero-visual.visible {
+  transition-delay: 0.2s;
+}
+
+.photo-frame {
+  animation: photoFloat 7s ease-in-out infinite;
+}
+
+.orbit-one {
+  animation: twinkle 3.2s ease-in-out infinite;
+}
+
+.orbit-two {
+  animation: twinkle 4s ease-in-out infinite 0.5s;
+}
+
+.float-bit {
+  animation-name: floatUp;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Animasi foto melayang */
+@keyframes photoFloat {
+  0%,
+  100% {
+    transform: rotate(2deg) translateY(0);
+  }
+
+  50% {
+    transform: rotate(1deg) translateY(-10px);
+  }
+}
+
+/* Animasi berkilau */
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.85) rotate(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.15) rotate(18deg);
+  }
+}
+
+/* Animasi elemen melayang */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 0.4;
+  }
+
+  85% {
+    opacity: 0.3;
+  }
+
+  100% {
+    transform: translateY(-110vh) rotate(35deg);
+    opacity: 0;
+  }
+}

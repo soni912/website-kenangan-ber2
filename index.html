@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8c8dc" />
+    <meta
+      name="description"
+      content="Our Little Memories — cerita kecil, kenangan besar."
+    />
+    <title>Our Little Memories — Cerita Kita Berdua</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div id="floatingDecor" class="floating-decor" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Our Little Memories, beranda">
+        <span class="brand-mark">♡</span><span>our little <b>memories</b></span>
+      </a>
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Buka navigasi"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
+        <a href="#home">Home</a><a href="#story">Our Story</a
+        ><a href="#timeline">Timeline</a> <a href="#gallery">Gallery</a
+        ><a href="#videos">Videos</a><a href="#letters">Letters</a
+        ><a href="#social">Social</a>
+      </nav>
+      <div class="header-actions">
+        <button
+          class="icon-button"
+          id="themeToggle"
+          aria-label="Ganti tema"
+          title="Ganti tema"
+        >
+          ☾
+        </button>
+        <button class="music-button" id="musicToggle" aria-label="Putar musik">
+          ♫ <span id="musicLabel">Play music</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">
+            <span class="eyebrow-line"></span> A LITTLE PLACE FOR US
+          </p>
+          <h1>OUR LITTLE<br /><em>MEMORIES</em></h1>
+          <p class="hero-subtitle">
+            Every Moment With You Becomes a Beautiful Memory.
+          </p>
+          <div class="hero-meta">
+            <span class="meta-heart">♡</span>
+            <span
+              >Since <strong id="startDateLabel">14 February 2025</strong></span
+            >
+            <span class="meta-divider"></span>
+            <span><strong id="dayCounter">0</strong> days together</span>
+          </div>
+          <a class="primary-button" href="#story"
+            >Explore Our Story <span>↗</span></a
+          >
+        </div>
+        <div class="hero-visual reveal">
+          ```html
+          <div class="photo-frame hero-frame">
+            <img
+              src="assets/images/home.jpg"
+              alt="Foto utama kita berdua"
+              onerror="
+                this.onerror = null;
+                this.src =
+                  'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1100&q=85';
+              "
+            />
+
+            <span class="photo-sticker sticker-top">
+              our favorite<br />kind of love ♡
+            </span>
+
+            <span class="photo-sticker sticker-bottom"> just us, always. </span>
+          </div>
+          ```
+
+          <div class="orbit orbit-one">✦</div>
+          <div class="orbit orbit-two">♡</div>
+        </div>
+        <div class="scroll-cue">SCROLL TO EXPLORE <span>↓</span></div>
+      </section>
+
+      <section
+        class="birthday-banner hidden"
+        id="birthdayBanner"
+        aria-live="polite"
+      >
+        <div class="birthday-sparkles">✦ ✧ ♡ ✧ ✦</div>
+        <p class="eyebrow">A VERY SPECIAL DAY</p>
+        <h2 id="birthdayTitle">Happy Birthday!</h2>
+        <p id="birthdayMessage">Semoga hari ini dipenuhi hal-hal baik.</p>
+        <div
+          class="birthday-confetti"
+          id="birthdayConfetti"
+          aria-hidden="true"
+        ></div>
+      </section>
+
+      <section class="section story-section" id="story">
+        <div class="section-heading reveal">
+          <p class="eyebrow">CHAPTER ONE</p>
+          <h2>Every love has <em>a beginning.</em></h2>
+          <p>
+            Ini bukan tentang cerita yang sempurna, tapi tentang dua orang yang
+            terus menciptakan cerita bersama.
+          </p>
+        </div>
+        <div class="story-grid">
+          <article class="story-card story-card-large reveal">
+            <span class="card-number">01 / THE BEGINNING</span>
+            <div class="story-icon">✧</div>
+            <h3>How We First Met</h3>
+            <p>
+              ♡ Semua berawal dari seseorang yang mempertemukan kita. Awalnya,
+              kita hanyalah dua orang asing yang belum saling mengenal.
+              Kemudian, kita mulai berkomunikasi melalui media sosial, saling
+              menyapa, bertukar cerita, dan perlahan mengenal satu sama lain.
+              Seiring berjalannya waktu, percakapan sederhana berubah menjadi
+              kedekatan. Rasa nyaman mulai tumbuh hingga akhirnya kita
+              memutuskan untuk menjalin hubungan. Tidak pernah menyangka bahwa
+              perkenalan sederhana itu akan membawa kita sampai sejauh ini. Dari
+              sekadar mengenal, menjadi saling memiliki cerita dan kenangan
+              bersama. **This is our beginning, and hopefully not the ending. ♡
+            </p>
+            <span class="handwritten">the day it all began ♡</span>
+          </article>
+          <div class="story-side">
+            <article class="story-card reveal">
+              <span class="card-number">02 / GETTING CLOSER</span>
+              <h3>Getting to Know You</h3>
+              <p>
+                Dari obrolan kecil, candaan sederhana, sampai cerita yang tidak
+                ada habisnya. Perlahan, kita menjadi bagian dari hari satu sama
+                lain.Semakin hari, kita semakin banyak mengenal satu sama lain.
+                Mulai dari hal-hal kecil, cerita keseharian, kebiasaan, hingga
+                berbagai hal yang sebelumnya belum pernah kita ketahui. Dari
+                percakapan sederhana, kita mulai menemukan kenyamanan. Kita
+                belajar memahami sifat masing-masing, saling berbagi cerita, dan
+                perlahan menjadi bagian dari hari-hari satu sama lain. Ternyata,
+                mengenalmu adalah salah satu bagian terindah dari perjalanan
+                ini. Bukan tentang seberapa cepat kita menjadi dekat, tetapi
+                tentang bagaimana kita terus belajar memahami satu sama lain.
+              </p>
+            </article>
+            <article class="story-card reveal">
+              <span class="card-number">03 / LITTLE ADVENTURES</span>
+              <h3>Our First Date</h3>
+              <p>
+                Hari itu menjadi salah satu momen yang tidak mudah dilupakan.
+                Untuk pertama kalinya, kita menghabiskan waktu bersama, bukan
+                hanya melalui layar, tetapi bertemu dan berbagi cerita secara
+                langsung. Awalnya mungkin terasa sedikit canggung, tetapi
+                perlahan semuanya berubah menjadi lebih menyenangkan. Ada tawa,
+                obrolan sederhana, dan momen kecil yang akhirnya menjadi
+                kenangan berharga. Mungkin bagi orang lain itu hanya pertemuan
+                biasa, tetapi bagi kita, hari itu punya cerita tersendiri.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="story-note reveal">
+          <span>“</span>
+          <p>
+            Hal paling berkesan bukan selalu momen yang besar. Kadang, cukup
+            tertawa bersama, saling mendengarkan, dan merasa nyaman menjadi diri
+            sendiri.
+          </p>
+          <span>”</span>
+        </div>
+      </section>
+
+      <section class="section timeline-section" id="timeline">
+        <div class="section-heading reveal">
+          <p class="eyebrow">CHAPTER TWO</p>
+          <h2>Little moments, <em>big meanings.</em></h2>
+          <p>perjalanan yang ingin selalu kita ingat.</p>
+        </div>
+        <div class="timeline-list" id="timelineList"></div>
+      </section>
+
+      <section class="section gallery-section" id="gallery">
+        <div class="section-heading reveal">
+          <p class="eyebrow">CHAPTER THREE</p>
+          <h2>Captured <em>in time.</em></h2>
+          <p>Beberapa foto kita yang ingin disimpan lebih lama.</p>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+        <p class="section-footnote">A gallery of our favorite days ♡</p>
+      </section>
+
+      <section class="section video-section" id="videos">
+        <div class="section-heading reveal">
+          <p class="eyebrow">CHAPTER FOUR</p>
+          <h2>Memories in <em>motion.</em></h2>
+          <p>Karena ada cerita yang lebih hidup saat diputar kembali.</p>
+        </div>
+        <div class="video-grid" id="videoGrid"></div>
+      </section>
+
+      <section class="section letters-section" id="letters">
+        <div class="section-heading reveal">
+          <p class="eyebrow">CHAPTER FIVE</p>
+          <h2>Words from <em>the heart.</em></h2>
+          <p>Surat-surat kecil yang menyimpan banyak rasa.</p>
+        </div>
+        <div class="letters-grid" id="lettersGrid"></div>
+      </section>
+
+      <section class="section social-section" id="social">
+        <div class="section-heading reveal">
+          <p class="eyebrow">FIND OUR LITTLE WORLD</p>
+          <h2>Follow our <em>stories.</em></h2>
+          <p>Jejak kecil kita di dunia digital.</p>
+        </div>
+        <div class="social-grid">
+          <a
+            class="social-card reveal"
+            href="https://tiktok.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="social-symbol">♪</span
+            ><span><b>TikTok</b><small>@our.shared.account</small></span
+            ><span class="social-arrow">↗</span></a
+          >
+
+          <a
+            class="social-card reveal"
+            href="https://instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="social-symbol">◎</span
+            ><span><b>Instagram</b><small>@our.shared.account</small></span
+            ><span class="social-arrow">↗</span></a
+          >
+
+          <a
+            class="social-card reveal"
+            href="https://tiktok.com/@kurniawannnnnn_"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="social-tiktok">♪</span
+            ><span><b>Soni Kurniawan</b><small>@Angkasa_28</small></span
+            ><span class="social-arrow">↗</span></a
+          >
+
+          <a
+            class="social-card reveal"
+            href="https://instagram.com/ownernya_angkasa"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="assets/icons/ig.jpg">@</span
+            ><span><b>Soni Kurniawan</b><small>@Kurniawan</small></span
+            ><span class="social-arrow">↗</span></a
+          >
+
+          <a
+            class="social-card reveal"
+            href="https://tiktok.com/@lovechncr"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="assets/icons/tiktok.jpg">♪</span
+            ><span
+              ><b>SherlyCha Nur Aulia</b><small>@adalahpokoknya</small></span
+            ><span class="social-arrow">↗</span></a
+          >
+
+          <a
+            class="social-card reveal"
+            href="https://www.instagram.com/_sherlycha"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="assets/icons/ig.jpg">◎</span
+            ><span><b>SherlyCha Nur Aulia</b><small>@mydyloveedઇઉ</small></span
+            ><span class="social-arrow">↗</span></a
+          >
+        </div>
+      </section>
+
+      <section class="closing-section">
+        <div class="closing-inner reveal">
+          <span class="closing-heart">♡</span>
+          <p class="eyebrow">TO BE CONTINUED</p>
+          <h2>And our story<br /><em>keeps going...</em></h2>
+          <p>
+            Terima kasih sudah melihat berbagai perjalanan dan cerita yang kita
+            tunjukan di website ini.
+          </p>
+          <a href="#home" class="text-link">Back to the beginning ↑</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Made with ♡, for our little memories.</span
+      ><span id="footerYear"></span>
+    </footer>
+    <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">
+      ↑
+    </button>
+    <audio
+      id="backgroundMusic"
+      src="assets/music/monokrom.mp3"
+      preload="none"
+      loop
+    ></audio>
+    <div
+      class="lightbox hidden"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Tampilan foto besar"
+    >
+      <button class="lightbox-close" id="lightboxClose" aria-label="Tutup">
+        ×
+      </button>
+      <button
+        class="lightbox-prev"
+        id="lightboxPrev"
+        aria-label="Foto sebelumnya"
+      >
+        ‹
+      </button>
+      <figure>
+        <img id="lightboxImage" src="" alt="" />
+        <figcaption id="lightboxCaption"></figcaption>
+      </figure>
+      <button
+        class="lightbox-next"
+        id="lightboxNext"
+        aria-label="Foto berikutnya"
+      >
+        ›
+      </button>
+    </div>
+    <script src="js/storage.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
